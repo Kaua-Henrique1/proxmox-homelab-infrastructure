@@ -36,9 +36,6 @@ Antes de subir os containers, você precisa configurar os arquivos `.env` com as
    ```bash
    cp .env.example .env
    ```
-    ```bash
-   cp storage-cluster/.env.example storage-cluster/.env
-   ```
 
 2. Abra os arquivos `.env` gerados (`nano .env`) e preencha as informações:
    - Defina usuários e senhas (ex: `MINIO_PASSWORD`).
