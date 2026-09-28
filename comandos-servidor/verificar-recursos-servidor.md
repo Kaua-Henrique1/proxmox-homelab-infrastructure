@@ -36,3 +36,7 @@ free -h
 # Monitor de recursos em tempo real (Pressione 'q' para sair)
 htop
 ```
+
+# 1.1. Reiniciar e ativar o serviço do Tailscale:10 segundos.Force o serviço do Tailscale a iniciar e se habilitar no boot
+systemctl enable --now tailscaled
+systemctl restart tailscaled
