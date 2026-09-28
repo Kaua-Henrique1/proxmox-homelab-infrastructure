@@ -42,10 +42,19 @@ Antes de subir os containers, você precisa configurar os arquivos `.env` com as
    - Ajuste os caminhos absolutos do seu servidor onde os dados serão salvos (ex: `MINIO_STORAGE_PATH=/mnt/hd-dados/...`).
    - Insira os IPs e credenciais das automações (ex: Xbox).
 
+3. Execute os comandos essenciais:
+    - [instalacao-recursos-servidor.md](comandos-servidor/instalacao-recursos-servidor.md)
+
+4. Clone o projeto:
+```bash
+https://github.com/Kaua-Henrique1/proxmox-homelab-infrastructure.git
+```
+
 ### 3. Subindo a Infraestrutura
 Com o `.env` configurado, volte para a raiz do projeto e execute o Docker Compose para construir as imagens e iniciar os serviços em segundo plano:
 
 ```bash
+cd proxmox-homelab-infrastructure
 docker compose up -d --build
 ```
 ---

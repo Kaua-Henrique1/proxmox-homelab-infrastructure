@@ -38,5 +38,13 @@ htop
 ```
 
 # 1.1. Reiniciar e ativar o serviço do Tailscale:10 segundos.Force o serviço do Tailscale a iniciar e se habilitar no boot
+```bash
 systemctl enable --now tailscaled
 systemctl restart tailscaled
+```
+
+# Parar/Iniciar o monitoramento quando desejar:
+```bash
+systemctl stop tailscale-watchdog.service
+systemctl start tailscale-watchdog.service
+```
